@@ -14,20 +14,9 @@ GitHub 저장소의 Settings > Secrets and variables > Actions에서 다음 secr
 - **값**: 귀하의 SSH 사용자명 (예: `giljurha` 또는 서버 계정명)
 - **설명**: SSH 접속 사용자명
 
-### 3. SERVER_SSH_KEY
-- **값**: SSH private key (전체 내용)
-- **설명**: 서버 접속을 위한 SSH 개인 키
-- **생성 방법**:
-  ```bash
-  # 로컬에서 SSH 키 생성 (이미 있다면 생략)
-  ssh-keygen -t ed25519 -C "your_email@example.com"
-
-  # public key를 서버에 복사
-  ssh-copy-id -i ~/.ssh/id_ed25519.pub your_username@1.234.75.247
-
-  # private key 내용을 GitHub Secret에 복사
-  cat ~/.ssh/id_ed25519
-  ```
+### 3. SERVER_PASSWORD
+- **값**: SSH 접속 패스워드
+- **설명**: 서버 접속을 위한 패스워드
 
 ### 4. SERVER_PORT
 - **값**: `22` (기본값) 또는 커스텀 SSH 포트
