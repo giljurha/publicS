@@ -8,7 +8,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: giljurha/publics
+  IMAGE_NAME: giljurha/publics  # GitHub Container Registry uses lowercase
 
 jobs:
   build-and-deploy:

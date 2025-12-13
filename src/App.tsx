@@ -553,13 +553,7 @@ function Header() {
   const [selectedCity, setSelectedCity] = useState("수원");
   const cities = [
     "수원",
-    "성남",
-    "고양",
-    "용인",
-    "부천",
-    "안산",
-    "안양",
-    "남양주",
+    "내 지역 설정",
   ];
 
   return (
